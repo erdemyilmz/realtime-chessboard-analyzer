@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: boardlight-api
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: https://erdemyilmz.github.io
+      - key: ENGINE_SECONDS
+        value: "4"
+      - key: VISION_MODEL
+        value: gemini-3.5-flash-lite
+      - key: GEMINI_API_KEY
+        sync: false
