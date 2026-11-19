@@ -1,0 +1,13 @@
+node_modules/
+.next/
+.env*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+work/
+*.tsbuildinfo
+.ruff_cache/
+out/
+public/engine/
+outputs/
